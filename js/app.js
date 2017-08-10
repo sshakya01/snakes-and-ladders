@@ -3,7 +3,7 @@ console.log('App.js is connected');
 let cells = document.querySelectorAll('.cell');
 let rows= document.querySelectorAll('.row')
 var result=[];
-for(let i = 99; i > 0; i--){
+for(let i = 0; i < cells.length; i++){
   cells[i].innerHTML = i;
   cells[i].setAttribute('class', 'cell text');
   // changes the color of cell 7
