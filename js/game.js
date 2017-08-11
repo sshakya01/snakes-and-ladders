@@ -1,4 +1,4 @@
-console.log("gamejs loaded");
+console.log("game.js loaded");
 
 
 let player1turn = true;
@@ -8,27 +8,27 @@ const die=document.getElementById("die");
 //let cells = document.querySelectorAll('.cell')
 var playerPosition1 = 0;
 var playerPosition2 = 0;
-document.addEventListener("click",function(){
-
+//document.addEventListener("click",function(){
 //move(die);
-});
+//});
 
 function move(dieroll){
   // first remove the X from the current one where you are
-
 if(player1turn==true){
 let whereIwas = document.getElementById(playerPosition1);
 if(playerPosition1 !== 0) {
 
   whereIwas.innerHTML = playerPosition1;
+
     // then add the dice roll to the player postition
 }
   playerPosition1 += dieroll;
   console.log('added the dice roll -> ',playerPosition1);
   // change the corresponding div to the new player holder
   let whereToGo = document.getElementById(playerPosition1);
+ //let id=playerPosition1.toString();
   whereToGo.innerHTML = 'X';
-  //cells[playerPosition].innerHTML= player1;
+ //$('#red').appendTo('#id');
 player1turn=false;
 }
 
