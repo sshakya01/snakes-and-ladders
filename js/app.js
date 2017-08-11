@@ -4,7 +4,7 @@ let cells = document.querySelectorAll('.cell');
 let rows= document.querySelectorAll('.row')
 var result=[];
 for(let i = 0; i < cells.length; i++){
-  cells[i].innerHTML = i;
+  cells[i].innerHTML = i+1;
   cells[i].setAttribute('class', 'cell text');
   // changes the color of cell 7
   // cells[6].style.background = '#f3f3f3';
