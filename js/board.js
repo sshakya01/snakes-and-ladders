@@ -5,8 +5,8 @@ let rows= document.querySelectorAll('.row');
 let reverseRow = document.querySelectorAll('.row');
 console.log(rows)
 for(let i = 0; i < cells.length; i++){
-  cells[i].innerHTML = cells.length-i;// checking the position of the cell
-  cells[i].setAttribute('class', 'cell text');
+  //cells[i].innerHTML = cells.length-i;// checking the position of the cell
+  //cells[i].setAttribute('class', 'cell text');
   // changes the color of cell 7
   // cells[6].style.background = '#f3f3f3';
   // cells[16].style.background = '#f3f3f3';

@@ -18,7 +18,7 @@ if(player1turn==true){
 let whereIwas = document.getElementById(playerPosition1);
 if(playerPosition1 !== 0) {
 
-  whereIwas.innerHTML = playerPosition1;
+  whereIwas.innerHTML = "";
 
     // then add the dice roll to the player postition
 }
@@ -27,16 +27,29 @@ if(playerPosition1 !== 0) {
   // change the corresponding div to the new player holder
   let whereToGo = document.getElementById(playerPosition1);
  //let id=playerPosition1.toString();
-  whereToGo.innerHTML = 'X';
+  whereToGo.innerHTML = 'P1';
+  whereToGo.style.color ="red";
  //$('#red').appendTo('#id');
 player1turn=false;
+ switch(playerPosition1){
+    case 1:
+      return playerPosition1=38
+    break;
+    case 4:
+      return playerPosition1=14
+    break;
+    case 9:
+      return playerPosition1=31
+    break;
+      }
+
 }
 
 else{
 let whereIwas2 = document.getElementById(playerPosition2);
 if(playerPosition2 !== 0) {
 
-  whereIwas2.innerHTML = playerPosition2;
+  whereIwas2.innerHTML = "";
     // then add the dice roll to the player postition
 }
   playerPosition2 += dieroll;
@@ -44,7 +57,9 @@ if(playerPosition2 !== 0) {
   // change the corresponding div to the new player holder
   let whereToGo2 = document.getElementById(playerPosition2);
   whereToGo2.innerHTML = 'P2';
+  whereToGo2.style.color="blue";
   //cells[playerPosition].innerHTML= player1;
 player1turn=true;
 }
 }
+
