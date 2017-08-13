@@ -5,12 +5,13 @@
     <script src="js/dice.js"></script>
     <script src="js/game.js"></script>
     <script src="js/logic.js"></script>
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
   </head>
   <body>
     <form id="form1">
-  Player name: <input type="text" name="name"><br>
+  Player name: <input type="text" id="name"><br>
 </form>
-<button onclick="outputname()">Submit</button>
+<button id="bot">Add Player Name</button>
 
     <h1>Snakes and Ladders</h1>
 <!-- <div> -->
@@ -139,8 +140,8 @@
     <!-- </div> -->
     <!-- </div> -->
 
-<div class="Player" id="red"></div>
-<div class="Player" id="blue">Player 2</div>
+<div id="red"></div>
+<div id="blue">Player 2</div>
 <div class="container">
 <div id="die" class="dice">0</div>
     <button id="start">start</button>

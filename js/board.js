@@ -15,8 +15,10 @@ for(let i = 0; i < cells.length; i++){
   // change background image of cell
 //   cells[26].style.backgroundImage = "url('https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone7/model/iphone7-model-select-201703?wid=1200&hei=630&fmt=jpeg')";
 }
-function outputname(){
-  var x = document.getElementById('form1');
-  var y = x.elements["name"].value;
-  document.getElementById('#red').innerHTML= y;
-}
+let boton=document.querySelector('#bot');
+boton.addEventListener('click', function(){
+  let player= document.querySelector("#red")
+  let inputText = document.querySelector('#name').value;
+  player.innerHTML=inputText;
+})
+
