@@ -7,10 +7,10 @@
     <script src="js/logic.js"></script>
   </head>
   <body>
-    <form action="/action_page.php">
-  Player name: <input type="text" name="usrname"><br>
-  <input type="submit" value="Submit">
+    <form id="form1">
+  Player name: <input type="text" name="name"><br>
 </form>
+<button onclick="outputname()">Submit</button>
 
     <h1>Snakes and Ladders</h1>
 <!-- <div> -->
@@ -139,7 +139,7 @@
     <!-- </div> -->
     <!-- </div> -->
 
-<div class="Player" id="red">Player 1</div>
+<div class="Player" id="red"></div>
 <div class="Player" id="blue">Player 2</div>
 <div class="container">
 <div id="die" class="dice">0</div>
