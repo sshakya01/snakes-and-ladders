@@ -68,18 +68,19 @@ button{
   margin-top:0%;
 }
 #red{
-  width:100px;
+  width:30px;
   height: 30px;
   background-color: red;
   font-size: 25px;
 margin-top:-10%;
+border-radius: 50%;
 }
 #blue{
-  width:100px;
+  width:30px;
   height: 30px;
   background-color: blue;
-  font-size: 25px;
 margin-top:0%;
+border-radius: 50%;
 }
 .container{
   /*display: flex;*/
@@ -92,5 +93,10 @@ width:200px;
 margin-top: 10%;
 
 }
+#landing{
+  background:blue;
+  text-align: center;
 
+
+}
 
